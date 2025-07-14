@@ -128,12 +128,12 @@ Shader "HimoToon/FX/FxBase"
             #pragma fragment FragmentProgram
             
             #include "Packages/com.unity.render-pipelines.universal/ShaderLibrary/Core.hlsl"
-            #include "FxCommon.hlsl"
+            #include "Library/FxCommon.hlsl"
         #if defined(_DEPTH_FADE_ON)
             #include "Packages/com.unity.render-pipelines.universal/ShaderLibrary/DeclareDepthTexture.hlsl"
         #endif
         #if defined(_USE_WORLD_PROJECTION_UV)
-            #include "Assets/Resources/Shader/Landscape/ShaderLibrary/TriplanarMappingUtility.hlsl"
+            #include "Library/TriplanarMappingUtility.hlsl"
         #endif
             
 
